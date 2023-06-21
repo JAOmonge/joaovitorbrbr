@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+<title>trabalhando com formularios</title>
+<meta charset="utf-8">
+</head>
+<body>
+<p> cadastro </p>
+<form METHOD="POST" name="cadastro" ACTION="#">
+<!-- campos ocultos para configuracao de envio -->
+	<input type="hidden" name="TO" value="jv.maluco.ma@gmail.com">
+	<input type="hidden" name="FROM" value="cadastro feito no site">
+	<input type="hidden" name="SUBJECT" value="novo cadastro relaizado">
+	<input type="hidden" name="RESPONDER" value="https://santarbabara.sp.senai.br">
+	
+	<!-- campos solicitados -->
+	<p> nome </p>
+	<p>
+	<input type="text" name="nome" id="nome" value="digite seu nome corno" size="40"maxlength="10">
+	</p>
+	<p>
+	<input type="text" name="nome2" id="nome2" placeholder="digite seu nome corno" size="40"maxlength="10">
+	</p>
+	
+	
+	<p> genero </p>
+	<input type="radio" name="sexo" value="masculino"> masculino
+	<input type="radio" name="sexo" value="feminino"> feminino																		
+	
+	<p> comente algo sobre voce </p>
+	<p>
+	<textarea name="sobre" cols="50" rows="4" id="sobre"> deixe mais informacoes aqui! </textarea>
+	</p>
+	<p>	voce gosta de </P>
+	<p>
+	<input type="checkbox" name="preferencia" value="pizzada"> pizzada <br>
+	<input type="checkbox" name="preferencia" value="cherrascada"> churrascada <br>
+	<input type="checkbox" name="preferencia" value="feriadao"> feriadao <br>
+	<input type="checkbox" name="preferencia" value="sorvete picole"> sorvete picole <br>
+	<input type="checkbox" name="preferencia" value="sorvete massa"> sorvete massa <br>
+	<input type="checkbox" name="preferencia" value="piscina"> piscina <br>
+	</p>
+	
+	<p> digite sua senha </p>
+	<p> <input type="password" name="senha" id="senha" size="25" maxlength="20">
+	
+	<p> comida predileta </p>
+	<select name="alimento">
+		<option value="arroz"> arroz </option>
+		<option value="feijao"> feijao </option>
+		<option value="picanha"> picanha </option>
+		<option value="batata"> batata </option>
+		<option value="nenhum" selected="selected"> nenhum de itens </option>
+	</select>
+</form>
+</body>
+</html>
